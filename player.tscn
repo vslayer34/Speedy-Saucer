@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxspohjq0gya0"]
+
+[ext_resource type="Texture2D" uid="uid://bedtypl3limjb" path="res://Assets/ufoRed.png" id="1_hjrar"]
+
+[node name="Player" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(614, 79)
+texture = ExtResource("1_hjrar")
