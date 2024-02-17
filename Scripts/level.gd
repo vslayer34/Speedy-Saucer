@@ -2,10 +2,7 @@ extends Node2D
 
 
 func _ready() -> void:
-	test()
-	pass
+	print_doubled(15)
 
-
-func test() -> void:
-	var my_calculations: int = (2 + 3) * 5
-	print("(2 + 3) * 5 = " + str(my_calculations))
+func print_doubled(param1: int) -> void:
+	print(param1 * 2)
