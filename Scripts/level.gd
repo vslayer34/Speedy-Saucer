@@ -1,8 +1,6 @@
 extends Node2D
 
 
-func _ready() -> void:
-	print_doubled(15)
+func _on_maze_body_exited(_body: Node2D) -> void:
+	get_tree().reload_current_scene()
 
-func print_doubled(param1: int) -> void:
-	print(param1 * 2)

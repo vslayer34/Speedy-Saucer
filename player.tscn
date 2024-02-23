@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://bedtypl3limjb" path="res://Assets/ufoRed.png" id="1_hjrar"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_scv62"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_oxsvk"]
-radius = 46.1736
+[sub_resource type="CircleShape2D" id="CircleShape2D_qfqgx"]
+radius = 45.0
 
 [node name="Player" type="RigidBody2D"]
 gravity_scale = 0.0
@@ -14,7 +14,7 @@ script = ExtResource("1_scv62")
 texture = ExtResource("1_hjrar")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_oxsvk")
+shape = SubResource("CircleShape2D_qfqgx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)
