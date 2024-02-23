@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3xyb1gcvpyra"]
+[gd_scene load_steps=4 format=3 uid="uid://d3xyb1gcvpyra"]
 
 [ext_resource type="Texture2D" uid="uid://bfb51ir2ev8gq" path="res://Assets/Background/darkPurple.png" id="1_c6roq"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_fo8oy"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_w5yrq"]
+font_size = 26
+
 [node name="Maze" type="Area2D"]
-z_index = -5
+z_index = 50
 position = Vector2(369, 298)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
@@ -13,3 +19,40 @@ polygon = PackedVector2Array(101, 227, 135, 637, 302, 762, 322, 1034, 373, 1412,
 texture_repeat = 2
 texture = ExtResource("1_c6roq")
 polygon = PackedVector2Array(101, 227, 135, 637, 302, 762, 322, 1034, 373, 1412, 803, 1309, 1192, 1153, 975, 757, 1353, 495, 1345, 223, 1373, -135, 1620, -314, 1406, -621, 1214, -314, 935, -610, 831, -387, 534, -659, 370, -452, -89, -445, -86, -959, 297, -949, 457, -884, 552, -924, 706, -825, 864, -1035, 1181, -735, 1310, -1065, 1774, -762, 2016, -339, 2063, 41, 1680, 52, 1612, 253, 1922, 510, 1506, 636, 1421, 863, 1589, 1115, 1380, 1355, 935, 1523, 340, 1610, -182, 1470, -28, 999, -189, 659, -134, 230, -333, 227, -331, -188, 290, -198, 285, 223)
+
+[node name="Start Label" type="Label" parent="."]
+offset_left = -98.0
+offset_top = -159.0
+offset_right = 52.0
+offset_bottom = -71.0
+text = "START"
+label_settings = SubResource("LabelSettings_fo8oy")
+
+[node name="End Label" type="Label" parent="."]
+offset_left = -45.0
+offset_top = -646.0
+offset_right = 105.0
+offset_bottom = -558.0
+rotation = -1.57079
+text = "END"
+label_settings = SubResource("LabelSettings_fo8oy")
+
+[node name="Tutorial one" type="Label" parent="."]
+offset_left = -318.0
+offset_top = -59.0
+offset_right = -73.0
+offset_bottom = 118.0
+text = "Tutorial:
+Reach the end point without the saucer leaving the track.
+"
+label_settings = SubResource("LabelSettings_w5yrq")
+autowrap_mode = 3
+
+[node name="Tutorial one2" type="Label" parent="."]
+offset_left = 30.0
+offset_top = -59.0
+offset_right = 275.0
+offset_bottom = 133.0
+text = "Use the arrow keys or WASD to move the saucer"
+label_settings = SubResource("LabelSettings_w5yrq")
+autowrap_mode = 3

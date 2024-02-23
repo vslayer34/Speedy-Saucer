@@ -8,12 +8,15 @@
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_w4w0m")
 
-[node name="Background" type="TextureRect" parent="."]
-z_index = -10
-offset_left = -731.0
-offset_top = -908.0
-offset_right = 2967.0
-offset_bottom = 2261.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="Background" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_qln5c")
 stretch_mode = 1
 
